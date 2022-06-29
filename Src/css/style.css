@@ -1,13 +1,62 @@
 body{
 	font-family: 'EB Garamond', serif;
+	
+}
+
+header{
+	
+	background-image: url(../img/backgraund.png);
 }
 
 footer{
-	text-align: center;
-	background: black;
-	padding: 40px 0;
-	
+	width: 100%;
+	min-height: 250px;
+	background: #0f152f;
+	display: flex;
 }
+
+footer .boxs{
+
+	width: 320px;
+	min-height: 150px;
+	padding: 20px;
+}
+
+footer .boxs:nth-child(4){
+	width: 400px;
+}
+
+.boxs h2{
+	color: #8689f5;
+	margin-bottom: 20px;
+	font-size: large;
+}
+
+.boxs ul li{
+	margin: 10px 0px;
+	list-style: none;
+
+}
+
+.boxs ul li a{
+
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.boxs ul li a:hover{
+
+	color: #8689f5;
+}
+
+.boxs p{
+
+	color: #8689f5;
+	text-align: justify;
+
+}
+
 .copyright {
 	color: #FFFFFF;
 	font-size: 13px;
@@ -15,14 +64,14 @@ footer{
 }
 
 #menu{
-	background-color: #384448;
+	background-color: #191970;
 }
 
 #menu ul{
-	position: relative;
+	
 	list-style: none;
 	padding: 0;
-	margin: auto;
+	
 }
 
 #menu ul li{
@@ -38,36 +87,91 @@ footer{
 }
 
 #menu ul li a:hover{
-	background-color: #191970;
+	background-color: #8689f5;
 }
 
 #menu ul li:last-child a{
 	float: right;
-	background-color: #191970;
+	background-color: #8689f5;
 }
 
-.banner{
-	max-height: 100%;
-	max-width: 100%;
+.footer{
 
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #191970;
+	padding: 0px 20px;
 	
 }
-.titulo-principal{
+
+
+
+.footer .sociais{
+	display: flex;
+}
+
+.sociais .social{
+	width: 40px;
+	height: 40px;
 	text-align: center;
+	line-height: 40px;
+	background: #ddd;
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .3s linear;
+}
+
+
+
+.sociais .social a{
+	color: #000;
 	font-size: 2em;
-	margin: 0 0 1em;
-	clear: left;
+	transition: color .3s linear;
 }
 
-.principal p{
-	margin: 0 0 1em;
+.sociais .social :hover{
+
+	width: 40px;
+	height: 40px;
+	background: #0f152f;
+	border-radius: 5px;
+}
+
+.sociais .social:hover a{
+
+	color: #fff;
+}
+
+.imghome{
+ 
+	
 
 }
 
+@media(max-width: 950px)
+{
+	footer{
+		
+		flex-direction: column;
+	}	
 
+	footer .boxs{
 
-.bsc_pricipal{
-		width: 200px;
-	float: right;
-	margin: 0 50px 50px 0;
+		width: 100%;
+		
+		text-align: center;
+	}
+	footer .boxs:nth-child(4){
+		width: 100%;
+	}
 
+	.imghome{
+
+		width: 100%;
+	}
+
+}
