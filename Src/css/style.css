@@ -6,10 +6,12 @@ body{
 
 footer{
 	width: 100%;
-	min-height: 250px;
+	min-height: 150px;
 	background: #0f152f;
 	display: flex;
 }
+
+
 
 footer .boxs{
 
@@ -25,7 +27,7 @@ footer .boxs:nth-child(4){
 .boxs h2{
 	color: #8689f5;
 	margin-bottom: 20px;
-	font-size: large;
+	font-size: 30px;
 }
 
 .boxs ul li{
@@ -232,19 +234,105 @@ footer .boxs:nth-child(4){
 
 
 
-.bk{
 
-	background-size: cover;
+
+
+.contato{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150vh;
+	justify-content: center;
+	align-items: center;
 
 }
 
+.areacontato {
 
-
-.bodylogin img{
-
-	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0f152f;
+	width: 400px;
+	height: 650px;
+	padding: 35px;
+	border-radius: 20px;
 }
 
+.areacontato form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+}
+
+.areacontato input{
+
+	margin-top: 12px;
+	background-color: #8689f5;
+	border: none;
+	height: 40px;
+	outline: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 10px;
+
+}
+
+.areacontato textarea{
+
+	margin-top: 12px;
+	background-color: #8689f5;
+	border: none;
+	height: 150px;
+	outline: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 10px;
+
+}
+
+.postcontato div{
+
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+
+}
+
+.postcontato input, textarea{
+
+		color: #fff;
+		font-size: 14px;
+		
+}
+
+.postcontato input::placeholder{
+
+	color: #fff;
+	font-size: 14px;
+	
+}
+
+.postcontato input[type="submit"]{
+
+	display: block;
+	background-color: #191970;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin: 10px;
+	cursor: pointer;
+
+}
+
+.postcontato label{
+
+	color: #ddd;
+	font-size: 20px;
+
+}
 
 @media(max-width: 950px)
 {
