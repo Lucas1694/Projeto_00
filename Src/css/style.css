@@ -232,7 +232,14 @@ footer .boxs:nth-child(4){
 
 }
 
+.bk{
 
+	width: 100%;
+	height: 100%;
+	
+	
+
+}
 
 
 
@@ -360,6 +367,14 @@ footer .boxs:nth-child(4){
 
 		width: 100%;
 
+	}
+	.bk{
+
+		width: 100%;
+		height: 100%;
+		
+		
+	
 	}
 
 }
